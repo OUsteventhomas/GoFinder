@@ -24,5 +24,4 @@ http://www.ecma-international.org/publications/standards/Ecma-376.htm
 All important data for a docx file is present in word/document.xml.
 This utility looks through the document.xml for given words.
 
-The utility does a case-senistive search
-It uses mainly ioutil and zip package from golang
+Since this utility changes all text to lowercase in the file, case sensitivity isn't an issue.
