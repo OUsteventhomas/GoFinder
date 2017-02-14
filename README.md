@@ -1,4 +1,5 @@
 This is a utility helping to search words from a docx file.
+
 Our usecase situation:
   In our company we have outside sales reps who are drawing up contracts with an internal team tasked with making sure those contracts contain specific language. Instead of taking in search words as a parameter on program run, we needed to always look for the same set of words in a proposal to make sure there is coverage.
   
