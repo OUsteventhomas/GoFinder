@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"regexp"
 )
 
 func GetDocumentContent(filename string) (documentContent string) {
