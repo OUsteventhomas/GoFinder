@@ -51,6 +51,13 @@ func GetDocumentContent(filename string) (documentContent string) {
 	defer rc.Close()
 
 	documentContent = strings.ToLower(string(data)) //right here do a "to lower" for search matching ease
+
+	// regular expression to remove ms formatting values for more accurate string matches
+	reg, err := regexp.Compile("\\<(.*?)\\>")
+	if err != nil {
+		log.Fatal(err)
+	}
+	documentContent = reg.ReplaceAllString(documentContent, "")
 	return
 }
 
@@ -65,7 +72,7 @@ func SearchKeywords(data string, keywords map[string]bool) {
 func main() {
 	fmt.Printf("\n")
 	if len(os.Args) < 2 {
-		fmt.Println("\n Usage: GoFinder <filePath> <keyword1> [<keyword2>...n]" +
+		fmt.Println("\n Usage: GoFinder <filePath>" +
 			"\n e.g. GoFinder C:\\Users\\joe.smith\\Desktop\\sample_contract.docx\n")
 		return
 	}
