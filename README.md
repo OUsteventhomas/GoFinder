@@ -1,15 +1,16 @@
-This is a utility helping to search words from a docx file
-A usecase could be, searching for specific skillset in resume.
-e.g. GoFinder /tmp/sample.docx C++ Java
+This is a utility helping to search words from a docx file.
+Our usecase situation:
+  In our company we have outside sales reps who are drawing up contracts with an internal team tasked with making sure those contracts contain specific language. Instead of taking in search words as a parameter on program run, we needed to always look for the same set of words in a proposal to make sure there is coverage.
+  
 
 The first argument is the Utility name, GoFinder
 The next is docx filename
-The filename is followed by list of skillset, C++ and Jave in this case
 
 The result is printed as
 -------------------------------
-C++ true
-Java false
+true  C++ 
+
+false Java
 
 indicating, C++ word exists n sample.docx and Java does not.
 
