@@ -14,7 +14,7 @@ true  C++
 
 false Java
 
-indicating, C++ word exists n sample.docx and Java does not.
+indicating, C++ word exists in sample.docx and Java does not.
 
 docx is a compressed zip file, following Office Open XML specifcations.
 It contains various xml files. It follows ECMA-376 specfication.
