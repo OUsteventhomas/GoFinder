@@ -108,8 +108,15 @@ func main() {
 	}
 
 	SearchKeywords(documentContent, keywords)
-
-	for keyword, exists := range keywords {
-		fmt.Println(exists, "\t", keyword)
+	
+	// Request submitted to print items in specific order every time for comparison ease
+	// There may be a more efficient way than a double loop
+	order := []string{"expiration", "confidentiality", "background", "pricing", "executive summary", "assumptions", "scope of services", "pricing", "travel", "schedule"}
+	for _, o := range order {
+		for keyword, exists := range keywords{
+			if keyword == o {
+				fmt.Println(exists, "\t", keyword)
+			}
+		}
 	}
 }
