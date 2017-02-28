@@ -10,13 +10,21 @@ Command:
 The result is printed as
 -------------------------------
 true    expiration
+
 false   confidentiality
+
 true	background
+
 true	pricing
+
 true 	executive summary
+
 false	assumptions
+
 true	scope of services
+
 true	travel
+
 true	schedule
 
 
