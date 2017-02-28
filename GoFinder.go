@@ -91,7 +91,6 @@ func main() {
 	"executive summary",
 	"assumptions",
 	"scope of services",
-	"pricing",
 	"travel",
 	"schedule"}
 
