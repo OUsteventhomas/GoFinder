@@ -82,18 +82,18 @@ func main() {
 
 	// keywords to check for, left in this fashion for readability
 	// all keywords should be in lowercase to match text from docx file
-	var text_check [10]string
-	text_check[0] = "expiration"
-	text_check[1] = "confidentiality"
-	text_check[2] = "background"
-	text_check[3] = "pricing"
-	text_check[4] = "executive summary"
-	text_check[5] = "assumptions"
-	text_check[6] = "scope of services"
-	text_check[7] = "pricing"
-	text_check[8] = "travel"
-	text_check[9] = "schedule"
-
+	// items will be printed to the screen in this order
+	text_check := []string {
+	"expiration",
+	"confidentiality",
+	"background",
+	"pricing",
+	"executive summary",
+	"assumptions",
+	"scope of services",
+	"pricing",
+	"travel",
+	"schedule"}
 
 	for _, keyword := range text_check {
 		keywords[keyword] = false
@@ -111,8 +111,7 @@ func main() {
 	
 	// Request submitted to print items in specific order every time for comparison ease
 	// There may be a more efficient way than a double loop
-	order := []string{"expiration", "confidentiality", "background", "pricing", "executive summary", "assumptions", "scope of services", "pricing", "travel", "schedule"}
-	for _, o := range order {
+	for _, o := range text_check {
 		for keyword, exists := range keywords{
 			if keyword == o {
 				fmt.Println(exists, "\t", keyword)
