@@ -8,25 +8,17 @@ Command:
 >GoFinder.exe "C:\users\joe.smith\desktop\check this document.docx"
 
 The result is printed as
--------------------------------
-true    expiration
-
-false   confidentiality
-
+```
+true	expiration
+false	confidentiality
 true	background
-
 true	pricing
-
 true 	executive summary
-
 false	assumptions
-
 true	scope of services
-
 true	travel
-
 true	schedule
-
+```
 
 These indicate by using a true/false if the words exist in the docx file.
 
