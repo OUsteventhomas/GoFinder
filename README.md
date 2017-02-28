@@ -7,7 +7,7 @@ Our usecase situation:
 Command:
 >GoFinder.exe "C:\users\joe.smith\desktop\check this document.docx"
 
-The result is printed as
+The result is printed as:
 ```
 true	expiration
 false	confidentiality
